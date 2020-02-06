@@ -1,0 +1,40 @@
+.all {
+    
+}
+
+h1 {
+    text-align: center;
+    font-size: 150px;
+    margin-top: 0px;
+ }
+ 
+ .profile {
+    display: flex; 
+    flex-direction: reverse;
+    justify-content: space-evenly;
+ }
+
+ .name {
+     padding-left: 290px;
+ }
+
+ .details {
+    display: flex; 
+    flex-direction: reverse;
+    justify-content: space-evenly;
+ }
+
+ .free{
+    display: flex; 
+    flex-direction: reverse;
+    justify-content: space-evenly;
+
+ }
+
+ .dream {
+    
+ }
+ 
+ .now {
+
+ }
