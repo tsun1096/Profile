@@ -1,41 +1,53 @@
-.all {
-    
+.background {
+   background-image: url(https://beiz.jp/images_P/wood-texture/wood-texture_00032.jpg);
+   background-size:cover;
 }
 
 img {
-   padding-left: 180px;
+   padding-left: 0;
 }
 
 h1 {
     text-align: center;
     font-size: 150px;
     margin-top: 0px;
+    margin-bottom: 20px;
+    color: white;
  }
 
  h4 {
     font-size: 40px;
+    margin: 0px;
+    color:rgb(223, 68, 68);
  }
  
  .profile {
-    display: flex; 
-    flex-direction: reverse;
+    display: flex;
     justify-content: space-evenly;
+    color: white;
+    font-size: 25px;
  }
 
  .name {
-     padding-left: 380px;
+     padding-left: 250px;
+     color: white;
+     font-size: 30px;
  }
 
  .details {
     display: flex; 
     flex-direction: reverse;
     justify-content: space-evenly;
+    color: white;
+    font-size: 30px;
  }
 
  .free{
     display: flex; 
     flex-direction: reverse;
     justify-content: space-evenly;
+    color: white;
+    font-size: 30px;
 
  }
 
@@ -43,6 +55,6 @@ h1 {
     
  }
  
- .now {
-
+ .now h4 {
+    float: right;
  }
