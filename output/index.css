@@ -14,8 +14,10 @@ h1 {
     margin-bottom: 20px;
     color: white;
     animation: animName 2.5s;
+    opacity: 0.8;
 }
-/*Profileの動き*/
+
+/* h1 Profileの動き */
 @keyframes animName {
  0%{
      width: 0%;
@@ -28,15 +30,18 @@ h1 {
    }
 }
 
- h4 {
-    font-size: 40px;
+ .free span {
+    font-size: 50px;
     margin: 0px;
     color:white;
+    opacity: 1;
+    background: linear-gradient(transparent 50%, #ff99ab 90%);
  }
 
  
  .profile {
     display: flex;
+    flex-direction: reverse;
     justify-content: space-evenly;
     color: white;
     font-size: 25px;
@@ -44,22 +49,42 @@ h1 {
 
  .important p {
     margin: 0%;
+    opacity: 0.8;
  }
 
  .key {
     font-size: 40px;
     background: linear-gradient(transparent 50%, #ff99ab 90%);
+    opacity: 0.8;
  }
 
+ /* 名前にマウスホバーした時の動き */
  .name {
-     padding-left: 200px;
+     padding-left: 110px;
      color: white;
      font-size: 30px;
- }
-
- .name span {
-   background: linear-gradient(transparent 50%, #ff99ab 90%);
- }
+     display: inline-block;
+     padding-bottom: 4px;
+     position: relative;
+     opacity: 0.8;
+   }
+   .name::after {
+     background: linear-gradient(transparent 30%, #ff99ab 95%);
+     bottom: 8px;
+     content: '';
+     display: block;
+     height: 30px;
+     left: 120px;
+     position: absolute;
+     transition: .3s all;
+     width: 0;
+   }
+   .name:hover::after {
+     width: 80%;
+   }
+   .name span {
+      font-size: 40px;
+   }
 
  .details {
     display: flex; 
@@ -67,18 +92,20 @@ h1 {
     justify-content: space-evenly;
     color: white;
     font-size: 30px;
+    opacity: 0.8;
  }
 
  .like {
-   background: linear-gradient(transparent 50%, rgb(255, 255, 147) 90%);
+   background: linear-gradient(transparent 50%, rgb(255, 69, 69) 90%);
    font-size: 50px;
  }
 
  .hate {
-   background: linear-gradient(transparent 50%, rgb(138, 1, 115) 90%);
+   background: linear-gradient(transparent 50%, rgb(148, 138, 241) 90%);
    font-size: 50px;
  }
 
+ /* NEWの点滅 */
  .flashing {
    animation: flash 1s linear infinite;
    width:50px;
@@ -91,7 +118,7 @@ h1 {
    0%,100% {
      opacity: 1;
    }
- 
+
    50% {
      opacity: 0;
    }
@@ -99,12 +126,33 @@ h1 {
 
  .free {
     display: flex; 
-    justify-content: center;
+    justify-content: space-around;
     color: white;
     font-size: 20px;
+ }
 
+ .now {
+    padding-right: 0px;
+    padding-left: 150px;
+    opacity: 0.8;
+    font-size: 25px;
  }
 
  .dream {
-    
+    padding-right: 100px;
+    padding-left: 100px;
+    opacity: 0.8;
+    font-size: 25px;
  }
+
+ /* @の跳ねるアニメーション */
+ .atto {
+   animation: key1 .3s ease infinite alternate;
+   display:inline-block;
+}
+
+@keyframes key1{
+  0% {transform: translateY(0px);}
+  100% {transform: translateY(-6px);}
+}
+ 
