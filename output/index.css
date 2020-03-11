@@ -13,7 +13,7 @@ h1 {
     margin-top: 0px;
     margin-bottom: 20px;
     color: white;
-    animation: animName 3s;
+    animation: animName 2.5s;
 }
 /*Profileの動き*/
 @keyframes animName {
@@ -21,18 +21,17 @@ h1 {
      width: 0%;
    }
 50%{
-      width: 215%;
+      width: 230%;
    }
 100%{
      width: 100%;
    }
 }
- 
 
  h4 {
     font-size: 40px;
     margin: 0px;
-    color:rgb(223, 68, 68);
+    color:white;
  }
 
  
@@ -43,10 +42,23 @@ h1 {
     font-size: 25px;
  }
 
+ .important p {
+    margin: 0%;
+ }
+
+ .key {
+    font-size: 40px;
+    background: linear-gradient(transparent 50%, #ff99ab 90%);
+ }
+
  .name {
-     padding-left: 250px;
+     padding-left: 200px;
      color: white;
      font-size: 30px;
+ }
+
+ .name span {
+   background: linear-gradient(transparent 50%, #ff99ab 90%);
  }
 
  .details {
@@ -57,7 +69,15 @@ h1 {
     font-size: 30px;
  }
 
- 
+ .like {
+   background: linear-gradient(transparent 50%, rgb(255, 255, 147) 90%);
+   font-size: 50px;
+ }
+
+ .hate {
+   background: linear-gradient(transparent 50%, rgb(138, 1, 115) 90%);
+   font-size: 50px;
+ }
 
  .flashing {
    animation: flash 1s linear infinite;
@@ -77,19 +97,14 @@ h1 {
    }
  }
 
- .free{
+ .free {
     display: flex; 
-    flex-direction: reverse;
-    justify-content: space-evenly;
+    justify-content: center;
     color: white;
-    font-size: 30px;
+    font-size: 20px;
 
  }
 
  .dream {
     
- }
- 
- .now h4 {
-    float: right;
  }
